@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 173 58% 39%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 173 58% 39%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 173 58% 39%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --news-card-shadow: 0 2px 8px -2px hsl(222 47% 11% / 0.08);
+    --news-card-shadow-hover: 0 8px 24px -4px hsl(222 47% 11% / 0.12);
+    --tab-active: 173 58% 39%;
+    --tab-inactive: 215 16% 47%;
+    --bottom-nav-bg: 0 0% 100%;
+    --category-local: 199 89% 48%;
+    --category-state: 262 83% 58%;
+    --category-national: 24 95% 53%;
+    --category-international: 340 82% 52%;
+    --category-sports: 142 71% 45%;
+    --category-entertainment: 330 81% 60%;
+    --category-technology: 217 91% 60%;
+  }
+
+  .dark {
+    --background: 222 47% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 173 58% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 173 58% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 173 58% 45%;
+
+    --news-card-shadow: 0 2px 8px -2px hsl(0 0% 0% / 0.3);
+    --news-card-shadow-hover: 0 8px 24px -4px hsl(0 0% 0% / 0.4);
+    --bottom-nav-bg: 222 47% 11%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  .font-telugu {
+    font-family: 'Noto Sans Telugu', sans-serif;
+  }
+}
+
+@layer utilities {
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  .safe-top {
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .news-card-shadow {
+    box-shadow: var(--news-card-shadow);
+  }
+
+  .news-card-shadow-hover {
+    box-shadow: var(--news-card-shadow-hover);
+  }
+}
+
+@layer components {
+  .category-badge {
+    @apply px-2 py-0.5 rounded-full text-xs font-medium text-white;
+  }
+
+  .category-local {
+    background-color: hsl(var(--category-local));
+  }
+
+  .category-state {
+    background-color: hsl(var(--category-state));
+  }
+
+  .category-national {
+    background-color: hsl(var(--category-national));
+  }
+
+  .category-international {
+    background-color: hsl(var(--category-international));
+  }
+
+  .category-sports {
+    background-color: hsl(var(--category-sports));
+  }
+
+  .category-entertainment {
+    background-color: hsl(var(--category-entertainment));
+  }
+
+  .category-technology {
+    background-color: hsl(var(--category-technology));
+  }
+
+  .tab-active {
+    @apply text-white font-semibold border-b-2 border-white;
+  }
+
+  .tab-inactive {
+    @apply text-white/70;
+  }
+
+  .menu-bar {
+    background-color: hsl(0 84% 50%);
+  }
+}
