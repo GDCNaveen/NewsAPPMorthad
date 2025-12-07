@@ -15,9 +15,9 @@ export const newsData: NewsItem[] = [
   {
     id: 1,
     category: "Local",
-    title: "NAVEEN New Metro Line Opens in City Center",
-    titleTe: " Suresh Naveen నగర కేంద్రంలో కొత్త మెట్రో లైన్ ప్రారంభం",
-    summary: "The new metro line connecting the eastern suburbs to the city center officially opened today, promising to reduce commute times by 40%.",
+    title: " New Metro Line Opens in City Center",
+    titleTe: " నగర కేంద్రంలో కొత్త మెట్రో లైన్ ప్రారంభం",
+    summary: "NAVEEN The new metro line connecting the eastern suburbs to the city center officially opened today, promising to reduce commute times by 40%.",
     summaryTe: "తూర్పు శివారు ప్రాంతాలను నగర కేంద్రంతో కలుపుతూ కొత్త మెట్రో లైన్ ఈ రోజు అధికారికంగా ప్రారంభమైంది, ప్రయాణ సమయాన్ని 40% తగ్గిస్తుందని హామీ ఇచ్చింది.",
     image: "https://images.unsplash.com/AVphoto-1544620347-c4fd4a3d5957?w=800&q=80",
     content: "The long-awaited metro expansion has finally become a reality. Officials gathered this morning for a ribbon-cutting ceremony at the new Central Station hub. The line features 12 new stations, modern air-conditioned trains, and state-of-the-art safety systems. Commuters can expect trains every 5 minutes during peak hours. The project, which cost approximately $2.5 billion, was completed six months ahead of schedule.",
