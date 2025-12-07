@@ -15,7 +15,7 @@ export const newsData: NewsItem[] = [
   {
     id: 1,
     category: "Local",
-    title: "New Metro Line Opens in City Center",
+    title: "nAVEEN New Metro Line Opens in City Center",
     titleTe: " Suresh Naveen నగర కేంద్రంలో కొత్త మెట్రో లైన్ ప్రారంభం",
     summary: "The new metro line connecting the eastern suburbs to the city center officially opened today, promising to reduce commute times by 40%.",
     summaryTe: "తూర్పు శివారు ప్రాంతాలను నగర కేంద్రంతో కలుపుతూ కొత్త మెట్రో లైన్ ఈ రోజు అధికారికంగా ప్రారంభమైంది, ప్రయాణ సమయాన్ని 40% తగ్గిస్తుందని హామీ ఇచ్చింది.",
